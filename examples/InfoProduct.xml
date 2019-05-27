@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<cg:SimpleRecordSet
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=""
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cg="http://cgiar.org/cg/terms/">
+    <cg:InformationProduct>
+        <dct:identifier>DOI_xxxxxxx</dct:identifier>
+        <dct:type>Data file</dct:type>
+        <dct:title>Field data in Kenya</dct:title>
+        <dct:description>description of the experiment</dct:description>
+        <dct:subject>
+            <dct:identifier>http://aims.fao.org/aos/agrovoc/c_8504</dct:identifier> 
+            <cg:label>Maize</cg:label>
+            <cg:vocab>Agrovoc</cg:vocab>
+        </dct:subject> 
+        <dct:subject>
+            <dct:identifier>http://aims.fao.org/aos/agrovoc/c_8504</dct:identifier> 
+            <cg:label>climate change</cg:label>
+            <cg:vocab>Agrovoc</cg:vocab>
+        </dct:subject> 
+        <dct:language>eng</dct:language>
+        <dct:rightsHolder>Bioversity International</dct:rightsHolder>
+        <dct:licence>Creative Commons License 4.0 CCO</dct:licence>
+        <dct:accessRights>Open</dct:accessRights>
+        <dct:date>2018-05-20</dct:date>
+        <cg:embargoDate>2018-07-31</cg:embargoDate>
+        <dct:relation>DOI_XXXX</dct:relation> <!-- linked publication -->
+        <cg:HasMetadata>URL/DOI or JSON object</cg:HasMetadata> <!--  file contening the ontology annotations. To be used in future, when the annotation tool will be available -->
+        <dct:creator>
+            <dct:identifier>ORCID_xxxx</dct:identifier>
+            <cg:affiliation>Bioversity International</cg:affiliation>
+            <foaf:name>Pierre Charles</foaf:name>
+        </dct:creator>
+        <dct:creator>
+            <dct:identifier>ORCID_xxxx</dct:identifier>
+            <cg:affiliation>CIAT</cg:affiliation>
+            <foaf:name>Marlene Prince</foaf:name>
+        </dct:creator>
+        <dct:contributor>
+            <dct:type>CRP</dct:type>
+            <foaf:name>RTB</foaf:name>
+        </dct:contributor>
+        <dct:contributor>
+            <dct:type>Donor</dct:type>
+            <foaf:name>Bill and Melinda Gates Fundation</foaf:name>
+        </dct:contributor>
+        <dct:contributor>
+            <dct:type>Lead Center</dct:type>
+            <foaf:name>Bioversity International</foaf:name>
+        </dct:contributor>
+        <dct:coverage>
+            <dct:spatial>
+                <type>Country</type>
+                <dct:identifier>http://sws.geonames.org/192950</dct:identifier>
+                <rdfs:label>Kenya</rdfs:label>
+            </dct:spatial>
+            <dct:spatial>
+                <type>Administrative Unit</type>
+                <dct:identifier>http://sws.geonames.org/xxxxx</dct:identifier>
+                <rdfs:label>xxxxx</rdfs:label>
+            </dct:spatial>
+            <dct:spatial>
+                <type>AEZ FAO</type>
+                <cg:code>101</cg:code>
+                <rdfs:label>Temperate / arid</rdfs:label>
+            </dct:spatial>
+            <dct:spatial>
+                <type>Coordinates</type> <!-- point for now -->
+                <cg:xCoord>20,404585</cg:xCoord>
+                <cg:yCoord>40,404585</cg:yCoord>
+            </dct:spatial>
+            <dct:temporal>2016-2018</dct:temporal>    
+        </dct:coverage>
+    </cg:InformationProduct>
+</cg:SimpleRecordSet>

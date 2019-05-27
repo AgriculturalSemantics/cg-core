@@ -1,0 +1,79 @@
+{
+   "InformationProduct": {
+      "identifier": "DOI_xxxxxxx",
+      "type": "Data file",
+      "title": "Field data in Kenya",
+      "description": "description of the experiment",
+      "subject": [
+         {
+            "identifier": "http://aims.fao.org/aos/agrovoc/c_8504",
+            "label": "Maize",
+            "vocab": "Agrovoc"
+         },
+         {
+            "identifier": "http://aims.fao.org/aos/agrovoc/c_8504",
+            "label": "climate change",
+            "vocab": "Agrovoc"
+         }
+      ],
+      "language": "eng",
+      "rightsHolder": "Bioversity International",
+      "licence": "Creative Commons License 4.0 CCO",
+      "accessRights": "Open",
+      "date": "2018-05-20",
+      "embargoDate": "2018-07-31",
+      "relation": "DOI_XXXX",
+      "HasMetadata": "URL/DOI or JSON object",
+      "creator": [
+         {
+            "identifier": "ORCID_xxxx",
+            "affiliation": "Bioversity International",
+            "name": "Pierre Charles"
+         },
+         {
+            "identifier": "ORCID_xxxx",
+            "affiliation": "CIAT",
+            "name": "Marlene Prince"
+         }
+      ],
+      "contributor": [
+         {
+            "type": "CRP",
+            "name": "RTB"
+         },
+         {
+            "type": "Donor",
+            "name": "Bill and Melinda Gates Fundation"
+         },
+         {
+            "type": "Lead Center",
+            "name": "Bioversity International"
+         }
+      ],
+      "coverage": {
+         "spatial": [
+            {
+               "type": "Country",
+               "identifier": "http://sws.geonames.org/192950",
+               "label": "Kenya"
+            },
+            {
+               "type": "Administrative Unit",
+               "identifier": "http://sws.geonames.org/xxxxx",
+               "label": "xxxxx"
+            },
+            {
+               "type": "AEZ FAO",
+               "code": "101",
+               "label": "Temperate / arid"
+            },
+            {
+               "type": "Coordinates",
+               "xCoord": "20,404585",
+               "yCoord": "40,404585"
+            }
+         ],
+         "temporal": "2016-2018"
+      }
+   }
+}
