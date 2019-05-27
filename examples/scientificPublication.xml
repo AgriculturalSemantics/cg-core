@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<cg:SimpleRecordSet
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=""
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cg="http://cgiar.org/cg/terms/">
+    <cg:ScientificPublication>
+        <dct:identifier>DOI_xxxxxxx</dct:identifier>
+        <dct:type>Journal Article</dct:type>
+        <dct:title>Field data in Kenya</dct:title>
+        <dct:description>Abstract</dct:description>
+        <dct:subject>
+            <dct:identifier>http://aims.fao.org/aos/agrovoc/c_8504</dct:identifier> ## maize
+            <cg:label>Maize</cg:label>
+            <cg:vocab>Agrovoc</cg:vocab>
+        </dct:subject> 
+        <dct:subject>
+            <dct:identifier>http://aims.fao.org/aos/agrovoc/c_8504</dct:identifier> ## climate change
+            <cg:label>climate change</cg:label>
+            <cg:vocab>Agrovoc</cg:vocab>
+        </dct:subject> 
+        <dct:language>eng</dct:language>
+        <dct:rightsHolder>xxxxxx</dct:rightsHolder>
+        <dct:licence>xxx</dct:licence> <!-- ### controlled list (cc licenses new and old cf.screenshot)-->
+        <dct:accessRights>Open</dct:accessRights>
+        <dct:date>20/02/2018</dct:date>
+        <dct:relation>DOI_XXXX</dct:relation> <!-- linked dataset -->
+        <cg:peer-reviewed>yes</cg:peer-reviewed>
+        <cg:bookTitle>xxxxx</cg:bookTitle>
+        <cg:journalTitle></cg:journalTitle> <!--  controled list -->
+        <cg:pages>12-15</cg:pages>
+        <cg:chapter>2</cg:chapter>
+        <cg:volume>2019</cg:volume>
+        <cg:number>1</cg:number>
+        <cg:series>cffggg</cg:series>
+        <cg:edition>vrggd</cg:edition>
+        <cg:howPublished></cg:howPublished>
+        <cg:notes></cg:notes>
+        <dct:creator>
+            <dct:identifier>ORCID_xxxx</dct:identifier>
+            <cg:affiliation>Bioversity International</cg:affiliation>
+            <foaf:name>Pierre Charles</foaf:name>
+        </dct:creator>
+        <dct:creator>
+            <dct:identifier>ORCID_xxxx</dct:identifier>
+            <cg:affiliation>CIAT</cg:affiliation>
+            <foaf:name>Marlene Prince</foaf:name>
+        </dct:creator>
+        <dct:contributor>
+            <dct:type>CRP</dct:type>
+            <foaf:name>RTB</foaf:name>
+        </dct:contributor>
+        <dct:contributor>
+            <dct:type>Donor</dct:type>
+            <foaf:name>Bill and Melinda Gates Fundation</foaf:name>
+        </dct:contributor>
+        <dct:contributor>
+            <dct:type>Lead Center</dct:type>
+            <foaf:name>Bioversity International</foaf:name>
+        </dct:contributor>
+        <dct:coverage>
+            <dct:spatial>
+                <type>Country</type>
+                <dct:identifier>http://sws.geonames.org/192950</dct:identifier>
+                <rdfs:label>Kenya</rdfs:label>
+            </dct:spatial>
+            <dct:spatial>
+                <type>Administrative Unit</type>
+                <dct:identifier>http://sws.geonames.org/xxxxx</dct:identifier>
+                <rdfs:label>xxxxx</rdfs:label>
+            </dct:spatial>
+            <dct:spatial>
+                <type>AEZ FAO</type>
+                <cg:code>101</cg:code>
+                <rdfs:label>Temperate / arid</rdfs:label>
+            </dct:spatial>
+            <dct:spatial>
+                <type>Coordinates</type> <!-- point for now -->
+                <cg:xCoord>20,404585</cg:xCoord>
+                <cg:yCoord>40,404585</cg:yCoord>
+            </dct:spatial>
+            <dct:temporal>2016-2018</dct:temporal>    
+        </dct:coverage>
+    </cg:ScientificPublication>
+</cg:SimpleRecordSet>

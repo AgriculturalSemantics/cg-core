@@ -1,0 +1,90 @@
+{
+   "ScientificPublication": {
+      "identifier": "DOI_xxxxxxx",
+      "type": "Journal Article",
+      "title": "Field data in Kenya",
+      "description": "Abstract",
+      "subject": [
+         {
+            "identifier": "http://aims.fao.org/aos/agrovoc/c_8504",
+            "#text": "## maize",
+            "label": "Maize",
+            "vocab": "Agrovoc"
+         },
+         {
+            "identifier": "http://aims.fao.org/aos/agrovoc/c_8504",
+            "#text": "## climate change",
+            "label": "climate change",
+            "vocab": "Agrovoc"
+         }
+      ],
+      "language": "eng",
+      "rightsHolder": "xxxxxx",
+      "licence": "xxx",
+      "accessRights": "Open",
+      "date": "20/02/2018",
+      "relation": "DOI_XXXX",
+      "peer-reviewed": "yes",
+      "bookTitle": "xxxxx",
+      "journalTitle": null,
+      "pages": "12-15",
+      "chapter": "2",
+      "volume": "2019",
+      "number": "1",
+      "series": "cffggg",
+      "edition": "vrggd",
+      "howPublished": null,
+      "notes": null,
+      "creator": [
+         {
+            "identifier": "ORCID_xxxx",
+            "affiliation": "Bioversity International",
+            "name": "Pierre Charles"
+         },
+         {
+            "identifier": "ORCID_xxxx",
+            "affiliation": "CIAT",
+            "name": "Marlene Prince"
+         }
+      ],
+      "contributor": [
+         {
+            "type": "CRP",
+            "name": "RTB"
+         },
+         {
+            "type": "Donor",
+            "name": "Bill and Melinda Gates Fundation"
+         },
+         {
+            "type": "Lead Center",
+            "name": "Bioversity International"
+         }
+      ],
+      "coverage": {
+         "spatial": [
+            {
+               "type": "Country",
+               "identifier": "http://sws.geonames.org/192950",
+               "label": "Kenya"
+            },
+            {
+               "type": "Administrative Unit",
+               "identifier": "http://sws.geonames.org/xxxxx",
+               "label": "xxxxx"
+            },
+            {
+               "type": "AEZ FAO",
+               "code": "101",
+               "label": "Temperate / arid"
+            },
+            {
+               "type": "Coordinates",
+               "xCoord": "20,404585",
+               "yCoord": "40,404585"
+            }
+         ],
+         "temporal": "2016-2018"
+      }
+   }
+}
