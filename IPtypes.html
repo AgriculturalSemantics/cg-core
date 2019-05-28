@@ -3,58 +3,74 @@
     <head>
         <meta charset="utf-8">
         <title>CG Core metadata schema</title>
+        <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             table {
-                table-layout: fixed;
-            },
-        </style>
+            }
+            .table .table-sm .table-bordered {
+                color: #333;;
+            }
+            h2{
+                display: none;
+                 /*margin-left: 12%;
+                 margin-top: 30px;*/
+            }
 
+        </style>
     </head>
     <body>
-          <div class="my">
+        <div id="titleP">
+            <h1 id="cgcoremetadatareferenceguide">Information Products</h1>
+            <p>This page provides the description of the information product types recommended by the CG Core metadata schema </p>
+        </div>
+        <hr />
+        <div class="my">
+            <p class="menu"><a href="cgcore.html">return to cg core main page</a></p>
+        </div>
+        <div class="my-4">
                 <h3>Types of Information Product</h3>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#kos">KOS</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#datafile">Data file</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#database">Database</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#datasetasacollectionofdata">Dataset As A Collection Of Data</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#geospatialrasterfile">geospatial raster file</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#geospatialvectorfile">geospatial vector file</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#manual">Manual</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#website">Website</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#software">Software</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#image">Image</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#audio">Audio</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#brochure">Brochure</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#directivedocument">directive document</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#legaldocument">Legal Document</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#technicalreport">Technical Report</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#sourcecode">Source Code</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#standard">Standard</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#newsitem">News Item</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#post">post</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#pressitem">Press Item</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#workingpaper">Working Paper</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#map">Map</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#journal(full)">Journal (full)</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#journalarticle">Journal Article</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#poster">Poster</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#other">Other</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#video">Video</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#videorecording">Video Recording</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#newsletter">Newsletter</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#infographic">Infographic</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#newspaper">Newspaper</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#researchreport">Research Report</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#book">Book</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#bookchapter">Book Chapter</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#conferencepaper">Conference Paper</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#conferenceproceedings">Conference Proceedings</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#magazinearticle">Magazine Article</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#personalcommunication">Personal Communication</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#financialreport">Financial Report</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#presentation">Presentation</a>
-                <a class="btn btn-sm btn-outline-secondary m-2" href="#thesis">Thesis</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#kos">KOS</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#datafile">Data file</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#database">Database</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#datasetasacollectionofdata">Dataset As A Collection Of Data</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#geospatialrasterfile">geospatial raster file</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#geospatialvectorfile">geospatial vector file</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#manual">Manual</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#website">Website</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#software">Software</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#image">Image</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#audio">Audio</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#brochure">Brochure</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#directivedocument">directive document</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#legaldocument">Legal Document</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#technicalreport">Technical Report</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#sourcecode">Source Code</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#standard">Standard</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#newsitem">News Item</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#post">post</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#pressitem">Press Item</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#workingpaper">Working Paper</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#map">Map</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#journal(full)">Journal (full)</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#journalarticle">Journal Article</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#poster">Poster</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#other">Other</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#video">Video</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#videorecording">Video Recording</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#newsletter">Newsletter</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#infographic">Infographic</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#newspaper">Newspaper</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#researchreport">Research Report</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#book">Book</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#bookchapter">Book Chapter</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#conferencepaper">Conference Paper</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#conferenceproceedings">Conference Proceedings</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#magazinearticle">Magazine Article</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#personalcommunication">Personal Communication</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#financialreport">Financial Report</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#presentation">Presentation</a>
+                <a class="btn btn-sm btn-outline-secondary m-1" href="#thesis">Thesis</a>
                 
         </div>
 
