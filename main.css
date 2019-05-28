@@ -23,6 +23,7 @@
 .btn-sm.btn-outline-secondary.m-0 {
         border-color: white;
         color: #FFA500;
+        width: 100%;
 }
 
 #informationproduct{
@@ -71,11 +72,14 @@
     border-radius: 25px;
 }
  
-.my a {
+.my.btn.btn-sm.btn-outline-secondary.m-0 {
     text-decoration: none;
     color: inherit;
     width: 80%;
     font-weight: bold;
+
 }
+
+
 
 
