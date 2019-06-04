@@ -8,9 +8,10 @@
     xmlns:cg="http://cgiar.org/cg/terms/">
     <cg:ScientificPublication>
         <dct:identifier>DOI_xxxxxxx</dct:identifier>
+        <dct:bibliographicCitation>full citation</dct:bibliographicCitation>
         <dct:type>Journal Article</dct:type>
         <dct:title>Field data in Kenya</dct:title>
-        <dct:description>Abstract</dct:description>
+        <dct:abstract>Abstract</dct:abstract>
         <dct:subject>
             <dct:identifier>http://aims.fao.org/aos/agrovoc/c_8504</dct:identifier> ## maize
             <cg:label>Maize</cg:label>
@@ -38,6 +39,7 @@
         <cg:edition>vrggd</cg:edition>
         <cg:howPublished></cg:howPublished>
         <cg:notes></cg:notes>
+        <dct:isPartOf>book part of series</dct:isPartOf> <!-- appplies only for books -->
         <dct:creator>
             <dct:identifier>ORCID_xxxx</dct:identifier>
             <cg:affiliation>Bioversity International</cg:affiliation>
