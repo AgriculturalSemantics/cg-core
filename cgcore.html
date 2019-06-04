@@ -500,6 +500,8 @@
             <h2 id="scientificpublication">Scientific Publication</h2>
 
             <div class="my-4">
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:abstract">abstract</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:bibliographicCitation">bibliographicCitation</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:peer-reviewed">peer-reviewed</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:howpublished">howpublished</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:journal">journal</a>
@@ -511,6 +513,7 @@
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:series">series</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:edition">edition</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:notes">notes</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:isPartOf">isPartOf</a>
                 </div>
 
             <table class="table table-sm table-bordered">
@@ -519,6 +522,32 @@
                     <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/cg/terms/ScientificPublication">http://purl.org/cg/terms/ScientificPublication</a></td></tr>
                     <tr><td class="theme-label">Definition</td><td>Specific Information Product type covering publications</td></tr>
                     <tr><td class="theme-label">Comments</td><td></td></tr>
+                    <tr><td class="theme-label">Examples</td><td></td></tr>
+                </tbody>
+            </table>
+
+            <p class="invisible">
+                <a id="dct:abstract"></a><a id="abstract"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">abstract <span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/abstract">http://purl.org/dc/terms/abstract</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>A summary of the resource</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>refines <a href="http://purl.org/dc/terms/description">dct:description</a></td></tr>
+                    <tr><td class="theme-label">Examples</td><td></td></tr>
+                </tbody>
+            </table>
+
+            <p class="invisible">
+                <a id="dct:bibliographicCitation"></a><a id="bibliographicCitation"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">bibliographicCitation <span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>A bibliographic reference for the resource</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible. Refines <a href="http://purl.org/dc/terms/identifier">dct:identifer</a></td></tr>
                     <tr><td class="theme-label">Examples</td><td></td></tr>
                 </tbody>
             </table>
@@ -722,6 +751,20 @@
                     <tr><td class="theme-label">Examples</td><td><a href="http://aims.fao.org/aos/agrovoc/c_7771">http://aims.fao.org/aos/agrovoc/c_7771</a></td></tr>
                 </tbody>
             </table>
+
+            <p class="invisible">
+                <a id="dct:isPartOf"></a><a id="abstract"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">isPartOf <span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/isPartOf">http://purl.org/dc/terms/isPartOf</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>A related resource in which the described resource is physically or logically included</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>Should be used to link a book to a series</a></td></tr>
+                    <tr><td class="theme-label">Examples</td><td></td></tr>
+                </tbody>
+            </table>
+
         </div>
     </body>
 </html>
