@@ -1,9 +1,10 @@
 {
    "ScientificPublication": {
       "identifier": "DOI_xxxxxxx",
+      "bibliographicCitation": "full citation",
       "type": "Journal Article",
       "title": "Field data in Kenya",
-      "description": "Abstract",
+      "abstract": "Abstract",
       "subject": [
          {
             "identifier": "http://aims.fao.org/aos/agrovoc/c_8504",
@@ -35,6 +36,7 @@
       "edition": "vrggd",
       "howPublished": null,
       "notes": null,
+      "isPartOf": "book part of series",
       "creator": [
          {
             "identifier": "ORCID_xxxx",
