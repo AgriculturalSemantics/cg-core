@@ -7,5 +7,8 @@ CG Core Metadata Reference Guide can be accessed here: https://agriculturalseman
 
 For more information on the schema, contact the group at metadata-wg@groups.cgiar.org
 
+List of members of the group:
+  - Marie-Angélique Laporte, Bioversity International
+
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The CG Core Metadata Schema</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
