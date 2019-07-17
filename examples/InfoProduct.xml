@@ -28,7 +28,7 @@
         <dct:date>2018-05-20</dct:date>
         <cg:embargoDate>2018-07-31</cg:embargoDate>
         <dct:relation>DOI_XXXX</dct:relation> <!-- linked publication -->
-        <cg:HasMetadata>URL/DOI or JSON object</cg:HasMetadata> <!--  file contening the ontology annotations. To be used in future, when the annotation tool will be available -->
+        <cg:hasMetadata>URL/DOI or JSON object</cg:hasMetadata> <!--  file contening the ontology annotations. To be used in future, when the annotation tool will be available -->
         <dct:creator>
             <dct:identifier>ORCID_xxxx</dct:identifier>
             <cg:affiliation>Bioversity International</cg:affiliation>

@@ -23,7 +23,7 @@
       "date": "2018-05-20",
       "embargoDate": "2018-07-31",
       "relation": "DOI_XXXX",
-      "HasMetadata": "URL/DOI or JSON object",
+      "hasMetadata": "URL/DOI or JSON object",
       "creator": [
          {
             "identifier": "ORCID_xxxx",
