@@ -2,6 +2,7 @@
    "ScientificPublication": {
       "identifier": "DOI_xxxxxxx",
       "bibliographicCitation": "full citation",
+      "publisher": "Elsevier",
       "type": "Journal Article",
       "title": "Field data in Kenya",
       "abstract": "Abstract",

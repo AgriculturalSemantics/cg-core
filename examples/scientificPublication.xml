@@ -9,6 +9,7 @@
     <cg:ScientificPublication>
         <dct:identifier>DOI_xxxxxxx</dct:identifier>
         <dct:bibliographicCitation>full citation</dct:bibliographicCitation>
+        <dct:publisher>Elsevier</dct:publisher>
         <dct:type>Journal Article</dct:type>
         <dct:title>Field data in Kenya</dct:title>
         <dct:abstract>Abstract</dct:abstract>
