@@ -8,6 +8,8 @@
     xmlns:cg="http://cgiar.org/cg/terms/">
     <cg:ScientificPublication>
         <dct:identifier>DOI_xxxxxxx</dct:identifier>
+        <cg:issn>ISSN_xxxxxxx</cg:issn>
+        <cg:isbn>ISBN_xxxxxxx</cg:isbn>
         <dct:bibliographicCitation>full citation</dct:bibliographicCitation>
         <dct:publisher>Elsevier</dct:publisher>
         <dct:type>Journal Article</dct:type>

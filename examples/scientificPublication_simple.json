@@ -1,6 +1,8 @@
 {
    "ScientificPublication": {
       "identifier": "DOI_xxxxxxx",
+      "ISSN": "ISSN_xxxxxxx",
+      "ISBN": "ISBN_xxxxxxx",
       "bibliographicCitation": "full citation",
       "publisher": "Elsevier",
       "type": "Journal Article",
