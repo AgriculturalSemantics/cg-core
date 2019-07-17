@@ -31,7 +31,7 @@
         <dct:accessRights>Open</dct:accessRights>
         <dct:issued>20/02/2018</dct:issued>
         <dct:relation>DOI_XXXX</dct:relation> <!-- linked dataset -->
-        <cg:peer-reviewed>yes</cg:peer-reviewed>
+        <cg:peer-reviewed>true</cg:peer-reviewed>
         <cg:bookTitle>xxxxx</cg:bookTitle>
         <cg:journalTitle></cg:journalTitle> <!--  controled list -->
         <cg:pages>12-15</cg:pages>

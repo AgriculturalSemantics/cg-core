@@ -28,7 +28,7 @@
       "accessRights": "Open",
       "issued": "20/02/2018",
       "relation": "DOI_XXXX",
-      "peer-reviewed": "yes",
+      "peer-reviewed": true,
       "bookTitle": "xxxxx",
       "journalTitle": null,
       "pages": "12-15",
