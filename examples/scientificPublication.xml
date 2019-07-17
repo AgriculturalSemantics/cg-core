@@ -27,7 +27,7 @@
         <dct:rightsHolder>xxxxxx</dct:rightsHolder>
         <dct:licence>xxx</dct:licence> <!-- ### controlled list (cc licenses new and old cf.screenshot)-->
         <dct:accessRights>Open</dct:accessRights>
-        <dct:date>20/02/2018</dct:date>
+        <dct:issued>20/02/2018</dct:issued>
         <dct:relation>DOI_XXXX</dct:relation> <!-- linked dataset -->
         <cg:peer-reviewed>yes</cg:peer-reviewed>
         <cg:bookTitle>xxxxx</cg:bookTitle>
