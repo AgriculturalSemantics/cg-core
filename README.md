@@ -8,7 +8,7 @@ CG Core Metadata Reference Guide can be accessed here: https://agriculturalseman
 For more information on the schema, contact the group at metadata-wg@groups.cgiar.org
 
 List of members of the group:
-  - Marie-Angélique Laporte, Bioversity
+  - Marie-Angélique Laporte, Bioversity International
   - Margarita Ramirez, CCAFS-KDS
 
 # License
