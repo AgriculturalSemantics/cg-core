@@ -1,0 +1,354 @@
+@prefix cg: <http://purl.org/cg/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cg:Concept a rdfs:Class ;
+    rdfs:label "Concept" ;
+    rdfs:comment "A a unit of thought e.g. skos:concept, owl:class or simple keywords" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:isPartOf ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty rdfs:label ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:vocab ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:Concept ] .
+
+cg:Contributor a rdfs:Class ;
+    rdfs:label "Contributor" ;
+    rdfs:comment "Organisation, or service making contributions to the information product." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:Contributor ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty foaf:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:type ] .
+
+cg:Creator a rdfs:Class ;
+    rdfs:label "Creator" ;
+    rdfs:comment "The author(s), researcher(s), scientist(s) responsible for producing the information product" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:Creator ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:affiliation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty foaf:name ] .
+
+cg:InformationProduct a rdfs:Class ;
+    rdfs:label "Information product" ;
+    rdfs:comment "Product that contains any knowledge orintellectual property. In the CGIAR context, examples of information products can be datasets, scientific publications, audio recordings, video recordings, etc. " ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:title ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:date ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:coverage ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:HasMetadata ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:creator ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:subject ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:contributor ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:rightsHolder ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:accessRights ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:embargoDate ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:license ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:language ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:relation ] .
+
+cg:ScientificPublication a rdfs:Class ;
+    rdfs:label "Scientific Publication" ;
+    rdfs:comment "Specific Information Product type covering publications" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:chapter ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:series ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:journal ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:bibliographicCitation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:ScientificPublication ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:peer-reviewed ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:volume ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:number ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:booktitle ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:pages ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:howpublished ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:abstract ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:edition ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:notes ] .
+
+cg:coverage a rdfs:Class ;
+    rdfs:label "Coverage" ;
+    rdfs:comment "Spatial or temporal coverage" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:coverage ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:yCoord ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:spatial ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:temporal ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:identifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:xCoord ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty rdfs:label ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty cg:code ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty dct:type ] .
+
+cg: a dct:Standard ;
+    dct:publisher cg:cgiar ;
+    dct:title "CGIAR Core Metadata Schema" .
+
+cg:HasMetadata a rdf:Property ;
+    rdfs:label "HasMetadata" ;
+    rdfs:comment "A related resource that is the metadata record for the measured variables of the described dataset" .
+
+cg:affiliation a rdf:Property ;
+    rdfs:label "affiliation" ;
+    rdfs:comment "the affiliation of the creator" .
+
+cg:booktitle a rdf:Property ;
+    rdfs:label "booktitle" ;
+    rdfs:comment "The title of the book, if only part of it is being cited" .
+
+cg:chapter a rdf:Property ;
+    rdfs:label "chapter" ;
+    rdfs:comment "The chapter number" .
+
+cg:code a rdf:Property ;
+    rdfs:label "Code" ;
+    rdfs:comment "Code of the agroecological zone as defined by FAO" .
+
+cg:edition a rdf:Property ;
+    rdfs:label "edition" ;
+    rdfs:comment "The edition of a book, long form" .
+
+cg:embargoDate a rdf:Property ;
+    rdfs:label "embargo date" ;
+    rdfs:comment "In cases when the information product has an embargo this date indicates when it would be available." .
+
+cg:howpublished a rdf:Property ;
+    rdfs:label "howpublished" ;
+    rdfs:comment "How it was published, if the publishing method is nonstandard" .
+
+cg:journal a rdf:Property ;
+    rdfs:label "journal" ;
+    rdfs:comment "The journal name" .
+
+cg:notes a rdf:Property ;
+    rdfs:label "notes" ;
+    rdfs:comment "Miscellaneous extra information related to a scientific publication " .
+
+cg:number a rdf:Property ;
+    rdfs:label "number" ;
+    rdfs:comment "The \"(issue) number\" of a journal, magazine, or tech-report" .
+
+cg:pages a rdf:Property ;
+    rdfs:label "pages" ;
+    rdfs:comment "Page numbers" .
+
+cg:peer-reviewed a rdf:Property ;
+    rdfs:label "peer-reviewed" ;
+    rdfs:comment "If the resource has been peer reviewed" .
+
+cg:series a rdf:Property ;
+    rdfs:label "series" ;
+    rdfs:comment "The series of books the book was published in" .
+
+cg:vocab a rdf:Property ;
+    rdfs:label "vocab" ;
+    rdfs:comment "Source of the concept" .
+
+cg:volume a rdf:Property ;
+    rdfs:label "volume" ;
+    rdfs:comment "The volume of a journal or multi-volume book" .
+
+cg:xCoord a rdf:Property ;
+    rdfs:label "xCoord" ;
+    rdfs:comment "x coordinate, in decimal degrees" .
+
+cg:yCoord a rdf:Property ;
+    rdfs:label "yCoord" ;
+    rdfs:comment "y coordinate, in decimal degrees" .
+
+dct:abstract a rdf:Property ;
+    rdfs:label "abstract" ;
+    rdfs:comment "A summary of the resource" .
+
+dct:accessRights a rdf:Property ;
+    rdfs:label "accessRights" ;
+    rdfs:comment "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies." .
+
+dct:bibliographicCitation a rdf:Property ;
+    rdfs:label "bibliographicCitation" ;
+    rdfs:comment "A bibliographic reference for the resource" .
+
+dct:contributor a rdf:Property ;
+    rdfs:label "contributor" ;
+    rdfs:comment "To be used to link the resource to one or more contributor objects" .
+
+dct:coverage a rdf:Property ;
+    rdfs:label "coverage" ;
+    rdfs:comment "To be used to link the resource to one or more coverage objects" .
+
+dct:creator a rdf:Property ;
+    rdfs:label "creator" ;
+    rdfs:comment "To be used to link the resource to one or more creator objects" .
+
+dct:date a rdf:Property ;
+    rdfs:label "date" ;
+    rdfs:comment "The date when the information product was created in its final form to be published. " .
+
+dct:description a rdf:Property ;
+    rdfs:label "description" ;
+    rdfs:comment "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource." .
+
+dct:isPartOf a rdf:Property ;
+    rdfs:label "isPartOf" ;
+    rdfs:comment "A related resource in which the described resource is physically or logically included" .
+
+dct:language a rdf:Property ;
+    rdfs:label "language" ;
+    rdfs:comment "A language of the resource." .
+
+dct:license a rdf:Property ;
+    rdfs:label "license" ;
+    rdfs:comment "A legal document giving official permission to do something with the resource." .
+
+dct:relation a rdf:Property ;
+    rdfs:label "relation" ;
+    rdfs:comment "A related resource" .
+
+dct:rightsHolder a rdf:Property ;
+    rdfs:label "rightsHolder" ;
+    rdfs:comment "A person or organisation owning or managing rights over the resource." .
+
+dct:spatial a rdf:Property ;
+    rdfs:label "Spatial Coverage" ;
+    rdfs:comment "Spatial characteristics of the resource." .
+
+dct:subject a rdf:Property ;
+    rdfs:label "subject" ;
+    rdfs:comment "keywords describing the subject of the information product." .
+
+dct:temporal a rdf:Property ;
+    rdfs:label "Temporal Coverage" ;
+    rdfs:comment "Temporal characteristics of the resource." .
+
+dct:title a rdf:Property ;
+    rdfs:label "title" ;
+    rdfs:comment "A name given to the resource" .
+
+rdfs:label a rdf:Property ;
+    rdfs:label "Label" ;
+    rdfs:comment "Label of the spatial zone",
+        "The label of the concept" .
+
+foaf:name a rdf:Property ;
+    rdfs:label "name" ;
+    rdfs:comment "The name identifying the contributor",
+        "The name identifying the creator" .
+
+dct:type a rdf:Property ;
+    rdfs:label "type" ;
+    rdfs:comment "The nature or genre of the coverage information",
+        "The nature or genre of the resource",
+        "The type of contributor the contributor" .
+
+dct:identifier a rdf:Property ;
+    rdfs:label "Identifier",
+        "identifier" ;
+    rdfs:comment "An unambiguous reference to the resource within a given context.",
+        "Identifier of the spatial unit",
+        "ORCID",
+        "URI of the concept" .
+
