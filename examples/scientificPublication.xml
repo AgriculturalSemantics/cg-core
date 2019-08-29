@@ -8,7 +8,10 @@
     xmlns:cg="http://cgiar.org/cg/terms/">
     <cg:ScientificPublication>
         <dct:identifier>DOI_xxxxxxx</dct:identifier>
+        <cg:issn>ISSN_xxxxxxx</cg:issn>
+        <cg:isbn>ISBN_xxxxxxx</cg:isbn>
         <dct:bibliographicCitation>full citation</dct:bibliographicCitation>
+        <dct:publisher>Elsevier</dct:publisher>
         <dct:type>Journal Article</dct:type>
         <dct:title>Field data in Kenya</dct:title>
         <dct:abstract>Abstract</dct:abstract>
@@ -26,15 +29,16 @@
         <dct:rightsHolder>xxxxxx</dct:rightsHolder>
         <dct:licence>xxx</dct:licence> <!-- ### controlled list (cc licenses new and old cf.screenshot)-->
         <dct:accessRights>Open</dct:accessRights>
-        <dct:date>20/02/2018</dct:date>
+        <dct:issued>20/02/2018</dct:issued>
         <dct:relation>DOI_XXXX</dct:relation> <!-- linked dataset -->
-        <cg:peer-reviewed>yes</cg:peer-reviewed>
+        <cg:peer-reviewed>true</cg:peer-reviewed>
         <cg:bookTitle>xxxxx</cg:bookTitle>
         <cg:journalTitle></cg:journalTitle> <!--  controled list -->
         <cg:pages>12-15</cg:pages>
         <cg:chapter>2</cg:chapter>
         <cg:volume>2019</cg:volume>
         <cg:number>1</cg:number>
+        <dct:extent>p. 1159-1179</dct:extent>
         <cg:series>cffggg</cg:series>
         <cg:edition>vrggd</cg:edition>
         <cg:howPublished></cg:howPublished>

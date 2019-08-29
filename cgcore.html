@@ -50,13 +50,13 @@
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:rightsHolder">rightsHolder</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:accessRights">accessRights</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:subject">subject</a>
-                    <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:date">date</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:issued">issued</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:embargo date">embargo date</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:creator">creator</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:contributor">contributor</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:coverage">coverage</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:relation">relation</a>
-                    <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:HasMetadata">HasMetadata</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:HasMetadata">hasMetadata</a>
                 </div>
 
             <p class="invisible">
@@ -178,14 +178,14 @@
             </table>
 
             <p class="invisible">
-                <a id="dcterms:date"></a><a id="date"></a></p>
+                <a id="dcterms:issued"></a><a id="issued"></a></p>
 
             <table class="table table-sm table-bordered">
                 <tbody>
-                    <tr class="table-secondary"><th colspan="2">date <span class="badge badge-secondary float-right">Property</span></th></tr>
-                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/date">http://purl.org/dc/terms/date</a></td></tr>
-                    <tr><td class="theme-label">Definition</td><td>The date when the information product was created in its final form to be published. </td></tr>
-                    <tr><td class="theme-label">Comments</td><td></td></tr>
+                    <tr class="table-secondary"><th colspan="2">issued <span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/issued">http://purl.org/dc/terms/issued</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>Date of formal issuance (e.g., publication) of the resource</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>The date when the information product was created in its final form to be published</td></tr>
                     <tr><td class="theme-label">Examples</td><td></td></tr>
                 </tbody>
             </table>
@@ -260,8 +260,8 @@
 
             <table class="table table-sm table-bordered">
                 <tbody>
-                    <tr class="table-secondary"><th colspan="2">HasMetadata <span class="badge badge-secondary float-right">Property</span></th></tr>
-                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/cg/terms/HasMetadata">http://purl.org/cg/terms/HasMetadata</a></td></tr>
+                    <tr class="table-secondary"><th colspan="2">hasMetadata <span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/cg/terms/hasMetadata">http://purl.org/cg/terms/hasMetadata</a></td></tr>
                     <tr><td class="theme-label">Definition</td><td>A related resource that is the metadata record for the measured variables of the described dataset</td></tr>
                     <tr><td class="theme-label">Comments</td><td>This term is intended to be used with non-literal values.</td></tr>
                     <tr><td class="theme-label">Examples</td><td></td></tr>
@@ -502,6 +502,9 @@
             <div class="my-4">
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:abstract">abstract</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:bibliographicCitation">bibliographicCitation</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:publisher">publisher</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:issn">issn</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:isbn">isbn</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:peer-reviewed">peer-reviewed</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:howpublished">howpublished</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:journal">journal</a>
@@ -510,6 +513,7 @@
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:pages">pages</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:volume">volume</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:number">number</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:extent">extent</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:series">series</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:edition">edition</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:notes">notes</a>
@@ -553,6 +557,45 @@
             </table>
 
             <p class="invisible">
+                <a id="dct:publisher"></a><a id="publisher"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">publisher<span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/publisher">http://purl.org/dc/terms/publisher</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>An entity responsible for making the resource available</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>Here, the publisher of the scientific publication</td></tr>
+                    <tr><td class="theme-label">Examples</td><td></td></tr>
+                </tbody>
+            </table>
+
+            <p class="invisible">
+                <a id="cg:issn"></a><a id="issn"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">issn<span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/cg/terms/issn">http://purl.org/cg/terms/issn</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>Used to record ISSN number</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>Refines <a href="http://purl.org/dc/terms/identifier">dct:identifier</a></td></tr>
+                    <tr><td class="theme-label">Examples</td><td></td></tr>
+                </tbody>
+            </table>
+
+            <p class="invisible">
+                <a id="cg:isbn"></a><a id="isbn"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">isbn<span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/cg/terms/isbn">http://purl.org/cg/terms/isbn</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>Used to record ISBN number</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>Refines <a href="http://purl.org/dc/terms/identifier">dct:identifier</a></td></tr>
+                    <tr><td class="theme-label">Examples</td><td></td></tr>
+                </tbody>
+            </table>
+
+            <p class="invisible">
                 <a id="cg:peer-reviewed"></a><a id="peer-reviewed"></a></p>
 
             <table class="table table-sm table-bordered">
@@ -561,7 +604,7 @@
                     <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/cg/terms/peer-reviewed">http://purl.org/cg/terms/peer-reviewed</a></td></tr>
                     <tr><td class="theme-label">Definition</td><td>If the resource has been peer reviewed</td></tr>
                     <tr><td class="theme-label">Comments</td><td></td></tr>
-                    <tr><td class="theme-label">Examples</td><td>yes/no</td></tr>
+                    <tr><td class="theme-label">Examples</td><td>true is peer-reviewed, not used if not</td></tr>
                 </tbody>
             </table>
 
@@ -657,6 +700,19 @@
             </table>
 
             <p class="invisible">
+                <a id="dct:extent"></a><a id="extent"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">extent<span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/extent">http://purl.org/dc/terms/extent</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>The size or duration of the resource</td></tr>
+                    <tr><td class="theme-label">Comments</td><td></td></tr>
+                    <tr><td class="theme-label">Examples</td><td><code>p. 1159-1179</code> , <code>47 p.</code> , <code>185-211 p.</code> , <code>65(2): 200-206</code> , <code>1-13</code></td></tr>
+                </tbody>
+            </table>
+
+            <p class="invisible">
                 <a id="cg:series"></a><a id="series"></a></p>
 
             <table class="table table-sm table-bordered">
@@ -691,6 +747,19 @@
                     <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/cg/terms/notes">http://purl.org/cg/terms/notes</a></td></tr>
                     <tr><td class="theme-label">Definition</td><td>Miscellaneous extra information related to a scientific publication </td></tr>
                     <tr><td class="theme-label">Comments</td><td></td></tr>
+                    <tr><td class="theme-label">Examples</td><td></td></tr>
+                </tbody>
+            </table>
+
+            <p class="invisible">
+                <a id="dct:isPartOf"></a><a id="abstract"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">isPartOf <span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/isPartOf">http://purl.org/dc/terms/isPartOf</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>A related resource in which the described resource is physically or logically included</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>Should be used to link a book to a series</a></td></tr>
                     <tr><td class="theme-label">Examples</td><td></td></tr>
                 </tbody>
             </table>
@@ -751,20 +820,6 @@
                     <tr><td class="theme-label">Examples</td><td><a href="http://aims.fao.org/aos/agrovoc/c_7771">http://aims.fao.org/aos/agrovoc/c_7771</a></td></tr>
                 </tbody>
             </table>
-
-            <p class="invisible">
-                <a id="dct:isPartOf"></a><a id="abstract"></a></p>
-
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr class="table-secondary"><th colspan="2">isPartOf <span class="badge badge-secondary float-right">Property</span></th></tr>
-                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/isPartOf">http://purl.org/dc/terms/isPartOf</a></td></tr>
-                    <tr><td class="theme-label">Definition</td><td>A related resource in which the described resource is physically or logically included</td></tr>
-                    <tr><td class="theme-label">Comments</td><td>Should be used to link a book to a series</a></td></tr>
-                    <tr><td class="theme-label">Examples</td><td></td></tr>
-                </tbody>
-            </table>
-
         </div>
     </body>
 </html>
