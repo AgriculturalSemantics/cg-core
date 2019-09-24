@@ -506,6 +506,7 @@
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:issn">issn</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:isbn">isbn</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:peer-reviewed">peer-reviewed</a>
+                    <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:alternative">alternative title</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:howpublished">howpublished</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:journal">journal</a>
                     <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:booktitle">booktitle</a>
@@ -605,6 +606,19 @@
                     <tr><td class="theme-label">Definition</td><td>If the resource has been peer reviewed</td></tr>
                     <tr><td class="theme-label">Comments</td><td></td></tr>
                     <tr><td class="theme-label">Examples</td><td>true is peer-reviewed, not used if not</td></tr>
+                </tbody>
+            </table>
+
+            <p class="invisible">
+                <a id="dct:alternative"></a><a id="alternative"></a></p>
+
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr class="table-secondary"><th colspan="2">Alternative Title<span class="badge badge-secondary float-right">Property</span></th></tr>
+                    <tr><td class="theme-label">Identifier</td><td><a href="http://purl.org/dc/terms/abstract">http://purl.org/dc/terms/alternative</a></td></tr>
+                    <tr><td class="theme-label">Definition</td><td>An alternative name for the resource.</td></tr>
+                    <tr><td class="theme-label">Comments</td><td>refines <a href="http://purl.org/dc/terms/title">dct:title</a></td></tr>
+                    <tr><td class="theme-label">Examples</td><td></td></tr>
                 </tbody>
             </table>
 

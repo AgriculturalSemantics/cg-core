@@ -14,6 +14,7 @@
         <dct:publisher>Elsevier</dct:publisher>
         <dct:type>Journal Article</dct:type>
         <dct:title>Field data in Kenya</dct:title>
+        <dct:alternative>alternative title of climate change in Kenya</dct:alternative>
         <dct:abstract>Abstract</dct:abstract>
         <dct:subject>
             <dct:identifier>http://aims.fao.org/aos/agrovoc/c_8504</dct:identifier> ## maize
