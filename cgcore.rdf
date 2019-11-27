@@ -213,7 +213,7 @@ cg:edition a rdf:Property ;
     rdfs:comment "The edition of a book, long form" .
 
 cg:embargoDate a rdf:Property ;
-    rdfs:label "embargo date" ;
+    rdfs:label "embargoDate" ;
     rdfs:comment "In cases when the information product has an embargo this date indicates when it would be available." .
 
 cg:howpublished a rdf:Property ;
