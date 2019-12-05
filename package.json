@@ -1,0 +1,22 @@
+{
+  "name": "cg-core",
+  "version": "2.0.0",
+  "description": "CG Core metadata reference guide.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgriculturalSemantics/cg-core.git"
+  },
+  "scripts": {
+    "build:css": "node-sass --output-style expanded --precision 6 scss/style.scss main.css.tmp && cleancss --level 1 main.css.tmp -o main.css",
+    "build": "npm run build:css && npm run clean",
+    "clean": "rm main.css.tmp"
+  },
+  "keywords": "schema",
+  "author": "Alan Orth",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "bootstrap": "~4.4.1",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.0"
+  }
+}
