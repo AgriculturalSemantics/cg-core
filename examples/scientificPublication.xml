@@ -44,6 +44,7 @@
         <cg:edition>vrggd</cg:edition>
         <cg:howPublished></cg:howPublished>
         <cg:notes></cg:notes>
+        <dct:audience></dct:audience>
         <dct:isPartOf>book part of series</dct:isPartOf> <!-- appplies only for books -->
         <dct:creator>
             <dct:identifier>ORCID_xxxx</dct:identifier>
