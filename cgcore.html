@@ -17,7 +17,7 @@
             <nav class="nav nav-pills flex-column">
               <a class="nav-link" href="#metadata-properties">Metadata Properties</a> <a class="nav-link" href="#metadata-classes">Metadata Classes</a>
               <nav class="nav nav-pills flex-column">
-                <a class="nav-link ml-3 my-1" href="#creator-class">Creator</a> <a class="nav-link ml-3 my-1" href="#contributor-class">Contributor</a> <a class="nav-link ml-3 my-1" href="#coverage-class">Coverage</a> <a class="nav-link ml-3 my-1" href="#scientificPublication-class">Scientific Publication</a> <a class="nav-link ml-3 my-1" href="#concept-class">Concept</a>
+                <a class="nav-link ml-3 my-1" href="#concept-class">Concept</a> <a class="nav-link ml-3 my-1" href="#contributor-class">Contributor</a> <a class="nav-link ml-3 my-1" href="#coverage-class">Coverage</a> <a class="nav-link ml-3 my-1" href="#creator-class">Creator</a> <a class="nav-link ml-3 my-1" href="#scientificPublication-class">Scientific Publication</a>
               </nav>
             </nav>
           </nav>
@@ -544,15 +544,15 @@
           </tbody>
         </table>
         <h2 id="metadata-classes">Metadata Classes</h2>
-        <h3 id="creator-class">Creator</h3>
+        <h3 id="concept-class">Concept</h3>
         <div class="my-4">
-          <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:identifier">identifier</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:affiliation">affiliation</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:creator%20name">name</a>
+          <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:label">label</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:vocab">vocab</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:identifier">identifier</a>
         </div>
         <table class="table table-sm table-bordered">
           <tbody>
             <tr class="table-primary">
               <th colspan="2">
-                Creator
+                Concept
                 <div class="badge-class">
                   <span class="badge badge-primary">Class</span>
                 </div>
@@ -561,12 +561,12 @@
             <tr>
               <td class="col-2 field-name">Identifier</td>
               <td>
-                <a href="http://purl.org/cg/terms/Creator">http://purl.org/cg/terms/Creator</a>
+                <a href="http://purl.org/cg/terms/Concept">http://purl.org/cg/terms/Concept</a>
               </td>
             </tr>
             <tr>
               <td class="col-2 field-name">Definition</td>
-              <td>The author(s), researcher(s), scientist(s) responsible for producing the information product</td>
+              <td>A a unit of thought e.g. skos:concept, owl:class or simple keywords</td>
             </tr>
             <tr>
               <td class="col-2 field-name">Comments</td>
@@ -575,6 +575,68 @@
             <tr>
               <td class="col-2 field-name">Examples</td>
               <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:label"></a><a id="label"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                Label
+                <div class="badge-property">
+                  <span class="badge badge-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The label of the concept</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Should be the preferred label if a concept has several labels</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:vocab"></a><a id="vocab"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                vocab
+                <div class="badge-property">
+                  <span class="badge badge-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/vocab">http://purl.org/cg/terms/vocab</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Source of the concept</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>One of the following: AGROVOC, GACS, AgrO, CO</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>AGROVOC</code></td>
             </tr>
           </tbody>
         </table>
@@ -597,7 +659,7 @@
             </tr>
             <tr>
               <td class="col-2 field-name">Definition</td>
-              <td>ORCID</td>
+              <td>URI of the concept</td>
             </tr>
             <tr>
               <td class="col-2 field-name">Comments</td>
@@ -605,71 +667,9 @@
             </tr>
             <tr>
               <td class="col-2 field-name">Examples</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="invisible"><a id="cg:affiliation"></a><a id="affiliation"></a></p>
-        <table class="table table-sm table-bordered">
-          <tbody>
-            <tr class="table-secondary">
-              <th colspan="2">
-                affiliation
-                <div class="badge-property">
-                  <span class="badge badge-secondary">Property</span>
-                </div>
-              </th>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Identifier</td>
               <td>
-                <a href="http://purl.org/cg/terms/affiliation">http://purl.org/cg/terms/affiliation</a>
+                <a href="http://aims.fao.org/aos/agrovoc/c_7771">http://aims.fao.org/aos/agrovoc/c_7771</a>
               </td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Definition</td>
-              <td>the affiliation of the creator</td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Comments</td>
-              <td>
-                Must be populated with a value coming from the CLARISA <a href="https://clarisa.cgiar.org/api/institutions">institution list</a> or the <a href="https://www.grid.ac/">grid</a> list
-              </td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Examples</td>
-              <td><code>Bioversity International</code></td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="invisible"><a id="cg:creator name"></a><a id="name"></a></p>
-        <table class="table table-sm table-bordered">
-          <tbody>
-            <tr class="table-secondary">
-              <th colspan="2">
-                name
-                <div class="badge-property">
-                  <span class="badge badge-secondary">Property</span>
-                </div>
-              </th>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Identifier</td>
-              <td>
-                <a href="http://xmlns.com/foaf/0.1/name">http://xmlns.com/foaf/0.1/name</a>
-              </td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Definition</td>
-              <td>The full name identifying the creator</td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Comments</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Examples</td>
-              <td></td>
             </tr>
           </tbody>
         </table>
@@ -1060,6 +1060,135 @@
             <tr>
               <td class="col-2 field-name">Definition</td>
               <td>y coordinate, in decimal degrees</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="creator-class">Creator</h3>
+        <div class="my-4">
+          <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:identifier">identifier</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:affiliation">affiliation</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:creator%20name">name</a>
+        </div>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-primary">
+              <th colspan="2">
+                Creator
+                <div class="badge-class">
+                  <span class="badge badge-primary">Class</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/Creator">http://purl.org/cg/terms/Creator</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The author(s), researcher(s), scientist(s) responsible for producing the information product</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:identifier"></a><a id="identifer"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                identifier
+                <div class="badge-property">
+                  <span class="badge badge-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/identifier">http://purl.org/dc/terms/identifier</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>ORCID</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:affiliation"></a><a id="affiliation"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                affiliation
+                <div class="badge-property">
+                  <span class="badge badge-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/affiliation">http://purl.org/cg/terms/affiliation</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>the affiliation of the creator</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                Must be populated with a value coming from the CLARISA <a href="https://clarisa.cgiar.org/api/institutions">institution list</a> or the <a href="https://www.grid.ac/">grid</a> list
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>Bioversity International</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:creator name"></a><a id="name"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                name
+                <div class="badge-property">
+                  <span class="badge badge-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/name">http://xmlns.com/foaf/0.1/name</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The full name identifying the creator</td>
             </tr>
             <tr>
               <td class="col-2 field-name">Comments</td>
@@ -1740,135 +1869,6 @@
             <tr>
               <td class="col-2 field-name">Examples</td>
               <td></td>
-            </tr>
-          </tbody>
-        </table>
-        <h3 id="concept-class">Concept</h3>
-        <div class="my-4">
-          <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:label">label</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:vocab">vocab</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:identifier">identifier</a>
-        </div>
-        <table class="table table-sm table-bordered">
-          <tbody>
-            <tr class="table-primary">
-              <th colspan="2">
-                Concept
-                <div class="badge-class">
-                  <span class="badge badge-primary">Class</span>
-                </div>
-              </th>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Identifier</td>
-              <td>
-                <a href="http://purl.org/cg/terms/Concept">http://purl.org/cg/terms/Concept</a>
-              </td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Definition</td>
-              <td>A a unit of thought e.g. skos:concept, owl:class or simple keywords</td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Comments</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Examples</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="invisible"><a id="cg:label"></a><a id="label"></a></p>
-        <table class="table table-sm table-bordered">
-          <tbody>
-            <tr class="table-secondary">
-              <th colspan="2">
-                Label
-                <div class="badge-property">
-                  <span class="badge badge-secondary">Property</span>
-                </div>
-              </th>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Identifier</td>
-              <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a>
-              </td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Definition</td>
-              <td>The label of the concept</td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Comments</td>
-              <td>Should be the preferred label if a concept has several labels</td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Examples</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="invisible"><a id="cg:vocab"></a><a id="vocab"></a></p>
-        <table class="table table-sm table-bordered">
-          <tbody>
-            <tr class="table-secondary">
-              <th colspan="2">
-                vocab
-                <div class="badge-property">
-                  <span class="badge badge-secondary">Property</span>
-                </div>
-              </th>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Identifier</td>
-              <td>
-                <a href="http://purl.org/cg/terms/vocab">http://purl.org/cg/terms/vocab</a>
-              </td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Definition</td>
-              <td>Source of the concept</td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Comments</td>
-              <td>One of the following: AGROVOC, GACS, AgrO, CO</td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Examples</td>
-              <td><code>AGROVOC</code></td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="invisible"><a id="dcterms:identifier"></a><a id="identifer"></a></p>
-        <table class="table table-sm table-bordered">
-          <tbody>
-            <tr class="table-secondary">
-              <th colspan="2">
-                identifier
-                <div class="badge-property">
-                  <span class="badge badge-secondary">Property</span>
-                </div>
-              </th>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Identifier</td>
-              <td>
-                <a href="http://purl.org/dc/terms/identifier">http://purl.org/dc/terms/identifier</a>
-              </td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Definition</td>
-              <td>URI of the concept</td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Comments</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="col-2 field-name">Examples</td>
-              <td>
-                <a href="http://aims.fao.org/aos/agrovoc/c_7771">http://aims.fao.org/aos/agrovoc/c_7771</a>
-              </td>
             </tr>
           </tbody>
         </table>
