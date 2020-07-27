@@ -23,8 +23,7 @@
             </nav>
           </nav>
         </div>
-      </div>
-      <!-- main content is 10 columns on large devices, 12 on all others -->
+      </div><!-- main content is 10 columns on large devices, 12 on all others -->
       <main class="col-lg-10">
         <h1>CG Core Metadata Reference Guide</h1>
         <p class="lead">This page provides a list of the metadata elements that are used in the CG Core metadata schema. The CG Core metadata schema is an application profile and is built from existing standards as much as possible. It is an effort led by the Big Data Platform Metadata Working Group of the CGIAR.</p>
@@ -1204,7 +1203,7 @@
         </table>
         <h3 id="scientificPublication-class">Scientific Publication</h3>
         <div class="my-4">
-          <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:abstract">abstract</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:bibliographicCitation">bibliographicCitation</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:publisher">publisher</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:issn">issn</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:isbn">isbn</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:peer-reviewed">peer-reviewed</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:alternative">alternative title</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:howpublished">howpublished</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:journal">journal</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:booktitle">booktitle</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:chapter">chapter</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:pages">pages</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:volume">volume</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:number">number</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:extent">extent</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:series">series</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:edition">edition</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:notes">notes</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:audience">audience</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:isPartOf">isPartOf</a>
+          <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:abstract">abstract</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:bibliographicCitation">bibliographicCitation</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:publisher">publisher</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:issn">issn</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:isbn">isbn</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:reviewStatus">reviewStatus</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:alternative">alternative title</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:howpublished">howpublished</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:journal">journal</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:booktitle">booktitle</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:chapter">chapter</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:pages">pages</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:volume">volume</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:number">number</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:extent">extent</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:series">series</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:edition">edition</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:notes">notes</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:audience">audience</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:isPartOf">isPartOf</a>
         </div>
         <table class="table table-sm table-bordered">
           <tbody>
@@ -1399,12 +1398,12 @@
             </tr>
           </tbody>
         </table>
-        <p class="invisible"><a id="cg:peer-reviewed"></a></p>
+        <p class="invisible"><a id="cg:reviewStatus"></a></p>
         <table class="table table-sm table-bordered">
           <tbody>
             <tr class="table-secondary">
               <th colspan="2">
-                peer-reviewed
+                reviewStatus
                 <div class="badge-property">
                   <span class="badge badge-secondary">Property</span>
                 </div>
@@ -1413,20 +1412,25 @@
             <tr>
               <td class="col-2 field-name">Identifier</td>
               <td>
-                <a href="http://purl.org/cg/terms/peer-reviewed">http://purl.org/cg/terms/peer-reviewed</a>
+                <a href="http://purl.org/cg/terms/reviewStatus">http://purl.org/cg/terms/reviewStatus</a>
               </td>
             </tr>
             <tr>
               <td class="col-2 field-name">Definition</td>
-              <td>If the resource has been peer reviewed</td>
+              <td>Indicating the type of review the resource has undergone.</td>
             </tr>
             <tr>
               <td class="col-2 field-name">Comments</td>
-              <td></td>
+              <td>Value should indicate the type of review. Do not use if the resource has not been reviewed.</td>
             </tr>
             <tr>
               <td class="col-2 field-name">Examples</td>
-              <td>true is peer-reviewed, not used if not</td>
+              <td>
+                <ul>
+                  <li><code>Internal</code></li>
+                  <li><code>Peer</code></li>
+                </ul>
+              </td>
             </tr>
           </tbody>
         </table>
