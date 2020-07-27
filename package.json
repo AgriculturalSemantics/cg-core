@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build:css": "node-sass --output-style expanded --precision 6 scss/style.scss main.css.tmp && cleancss --level 1 main.css.tmp -o main.css",
-    "build": "npm run build:css && npm run clean",
+    "build:js": "uglifyjs node_modules/jquery/dist/jquery.slim.min.js node_modules/bootstrap/dist/js/bootstrap.min.js -o js/bundle.min.js",
+    "build": "npm run build:css && npm run build:js && npm run clean",
     "clean": "rm main.css.tmp"
   },
   "keywords": "schema",
@@ -17,6 +18,8 @@
   "devDependencies": {
     "bootstrap": "~4.5.0",
     "clean-css-cli": "^4.3.0",
-    "node-sass": "^4.14.1"
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "uglify-js": "^3.10.0"
   }
 }
