@@ -1,3 +1,7 @@
+## 2020-11-15
+
+- Use node-sass 5.0.0
+
 ## 2020-10-19
 
 - Update Bootstrap from 4.5.0 to 4.5.3
