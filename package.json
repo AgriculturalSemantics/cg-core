@@ -19,7 +19,7 @@
     "bootstrap": "^4.5.3",
     "clean-css-cli": "^4.3.0",
     "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
-    "uglify-js": "^3.11.3"
+    "node-sass": "^5.0.0",
+    "uglify-js": "^3.11.6"
   }
 }
