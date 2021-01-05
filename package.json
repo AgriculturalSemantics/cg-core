@@ -7,10 +7,10 @@
     "url": "https://github.com/AgriculturalSemantics/cg-core.git"
   },
   "scripts": {
-    "build:css": "node-sass --output-style expanded --precision 6 scss/style.scss main.css.tmp && cleancss --level 1 main.css.tmp -o css/main.css",
+    "build:css": "sass --style expanded scss/style.scss main.css.tmp && cleancss --level 1 main.css.tmp -o css/main.css",
     "build:js": "uglifyjs node_modules/jquery/dist/jquery.slim.min.js node_modules/bootstrap/dist/js/bootstrap.min.js -o js/bundle.min.js",
     "build": "npm run build:css && npm run build:js && npm run clean",
-    "clean": "rm main.css.tmp"
+    "clean": "rm main.css.tmp main.css.tmp.map"
   },
   "keywords": "schema",
   "author": "Alan Orth",
@@ -19,7 +19,7 @@
     "bootstrap": "^4.5.3",
     "clean-css-cli": "^4.3.0",
     "jquery": "^3.5.1",
-    "node-sass": "^5.0.0",
+    "sass": "^1.32.0",
     "uglify-js": "^3.11.6"
   }
 }
