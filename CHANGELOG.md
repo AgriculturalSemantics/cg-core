@@ -1,3 +1,8 @@
+## 2021-01-19
+- Fix links to xCoord, yCoord, and code in docs
+- Remove unnecessary links in docs
+- Update to Bootstrap v4.6.0
+
 ## 2020-11-15
 
 - Use node-sass 5.0.0
