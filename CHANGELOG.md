@@ -3,6 +3,9 @@
 - Remove unnecessary links in docs
 - Update to Bootstrap v4.6.0
 
+## 2021-01-05
+- Use sass instead of node-sass (sass is the only officially maintained version)
+
 ## 2020-11-15
 
 - Use node-sass 5.0.0
