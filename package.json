@@ -16,7 +16,7 @@
   "author": "Alan Orth",
   "license": "CC-BY-4.0",
   "devDependencies": {
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^4.6.0",
     "clean-css-cli": "^4.3.0",
     "jquery": "^3.5.1",
     "sass": "^1.32.0",
