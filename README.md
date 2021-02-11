@@ -1,5 +1,7 @@
 # cg-core
 
+[![DOI](https://zenodo.org/badge/188820257.svg)](https://zenodo.org/badge/latestdoi/188820257)
+
 Application profile developped by the CGIAR Metadata Working group. 
 The goal of the schema is to harmonise the metadata used in the different CGIAR Centers.
 
