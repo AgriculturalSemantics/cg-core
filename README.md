@@ -1,11 +1,8 @@
-# cg-core
+# cg-core [![DOI](https://zenodo.org/badge/188820257.svg)](https://zenodo.org/badge/latestdoi/188820257)
 
-[![DOI](https://zenodo.org/badge/188820257.svg)](https://zenodo.org/badge/latestdoi/188820257)
+Application profile developed by the CGIAR Metadata Working group. The goal of the schema is to harmonise the metadata used in the different CGIAR Centers.
 
-Application profile developped by the CGIAR Metadata Working group. 
-The goal of the schema is to harmonise the metadata used in the different CGIAR Centers.
-
-CG Core Metadata Reference Guide can be accessed here: https://agriculturalsemantics.github.io/cg-core/cgcore.html
+The CG Core Metadata Reference Guide can be accessed here: https://agriculturalsemantics.github.io/cg-core/cgcore.html
 
 For more information on the schema, contact the group at metadata-wg@groups.cgiar.org
 
