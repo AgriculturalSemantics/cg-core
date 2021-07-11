@@ -69,7 +69,7 @@ cg:InformationProduct a rdfs:Class ;
             owl:onProperty dct:coverage ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty cg:HasMetadata ],
+            owl:onProperty cg:hasMetadata ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty dct:description ],
@@ -127,7 +127,7 @@ cg:ScientificPublication a rdfs:Class ;
             owl:onProperty cg:ScientificPublication ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty cg:peer-reviewed ],
+            owl:onProperty cg:peerReviewed ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty cg:volume ],
@@ -136,13 +136,13 @@ cg:ScientificPublication a rdfs:Class ;
             owl:onProperty cg:number ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty cg:booktitle ],
+            owl:onProperty cg:bookTitle ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty cg:pages ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty cg:howpublished ],
+            owl:onProperty cg:howPublished ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty dct:abstract ],
@@ -188,16 +188,16 @@ cg: a dct:Standard ;
     dct:publisher cg:cgiar ;
     dct:title "CGIAR Core Metadata Schema" .
 
-cg:HasMetadata a rdf:Property ;
-    rdfs:label "HasMetadata" ;
+cg:hasMetadata a rdf:Property ;
+    rdfs:label "hasMetadata" ;
     rdfs:comment "A related resource that is the metadata record for the measured variables of the described dataset" .
 
 cg:affiliation a rdf:Property ;
     rdfs:label "affiliation" ;
     rdfs:comment "the affiliation of the creator" .
 
-cg:booktitle a rdf:Property ;
-    rdfs:label "booktitle" ;
+cg:bookTitle a rdf:Property ;
+    rdfs:label "bookTitle" ;
     rdfs:comment "The title of the book, if only part of it is being cited" .
 
 cg:chapter a rdf:Property ;
@@ -216,8 +216,8 @@ cg:embargoDate a rdf:Property ;
     rdfs:label "embargoDate" ;
     rdfs:comment "In cases when the information product has an embargo this date indicates when it would be available." .
 
-cg:howpublished a rdf:Property ;
-    rdfs:label "howpublished" ;
+cg:howPublished a rdf:Property ;
+    rdfs:label "howPublished" ;
     rdfs:comment "How it was published, if the publishing method is nonstandard" .
 
 cg:journal a rdf:Property ;
@@ -236,8 +236,8 @@ cg:pages a rdf:Property ;
     rdfs:label "pages" ;
     rdfs:comment "Page numbers" .
 
-cg:peer-reviewed a rdf:Property ;
-    rdfs:label "peer-reviewed" ;
+cg:peerReviewed a rdf:Property ;
+    rdfs:label "peerReviewed" ;
     rdfs:comment "If the resource has been peer reviewed" .
 
 cg:series a rdf:Property ;
