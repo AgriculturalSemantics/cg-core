@@ -23,8 +23,7 @@
             </nav>
           </nav>
         </div>
-      </div>
-      <!-- main content is 10 columns on large devices, 12 on all others -->
+      </div><!-- main content is 10 columns on large devices, 12 on all others -->
       <main class="col-lg-10">
         <h1>CG Core Metadata Reference Guide</h1>
         <p class="lead">This page provides a list of the metadata elements that are used in the CG Core metadata schema. The CG Core metadata schema is an application profile and is built from existing standards as much as possible. It is an effort led by the Big Data Platform Metadata Working Group of the CGIAR.</p>
@@ -62,11 +61,16 @@
             </tr>
             <tr>
               <td class="col-2 field-name">Comments</td>
-              <td>Recommended best practice is to identify the resource by using a DOI or an handle</td>
+              <td>Recommended best practice is to identify the resource by using a string conforming to an identification system. Examples include DOI and Handle. Persistent identifiers should be provided as HTTP(S) URIs.</td>
             </tr>
             <tr>
               <td class="col-2 field-name">Examples</td>
-              <td></td>
+              <td>
+                <ul>
+                  <li><code>https://doi.org/10.1186/1743-422X-9-218</code></li>
+                  <li><code>https://hdl.handle.net/10568/105514</code></li>
+                </ul>
+              </td>
             </tr>
           </tbody>
         </table>

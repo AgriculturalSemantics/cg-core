@@ -7,7 +7,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:cg="http://cgiar.org/cg/terms/">
     <cg:InformationProduct>
-        <dct:identifier>DOI_xxxxxxx</dct:identifier>
+        <dct:identifier>https://doi.org/10.1186/1743-422X-9-218</dct:identifier>
         <dct:type>Data file</dct:type>
         <dct:title>Field data in Kenya</dct:title>
         <dct:description>description of the experiment</dct:description>
@@ -27,15 +27,15 @@
         <dct:accessRights>Open</dct:accessRights>
         <dct:issued>2018-05-20</dct:issued>
         <cg:embargoDate>2018-07-31</cg:embargoDate>
-        <dct:relation>DOI_XXXX</dct:relation> <!-- linked publication -->
+        <dct:relation>https://doi.org/10.1186/1743-422X-9-218</dct:relation> <!-- linked publication -->
         <cg:hasMetadata>URL/DOI or JSON object</cg:hasMetadata> <!--  file contening the ontology annotations. To be used in future, when the annotation tool will be available -->
         <dct:creator>
-            <dct:identifier>ORCID_xxxx</dct:identifier>
+            <dct:identifier>https://orcid.org/0000-0001-7134-8977</dct:identifier>
             <cg:affiliation>Bioversity International</cg:affiliation>
             <foaf:name>Pierre Charles</foaf:name>
         </dct:creator>
         <dct:creator>
-            <dct:identifier>ORCID_xxxx</dct:identifier>
+            <dct:identifier>https://orcid.org/0000-0002-1735-7458</dct:identifier>
             <cg:affiliation>CIAT</cg:affiliation>
             <foaf:name>Marlene Prince</foaf:name>
         </dct:creator>

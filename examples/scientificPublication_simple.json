@@ -1,6 +1,6 @@
 {
    "ScientificPublication": {
-      "identifier": "DOI_xxxxxxx",
+      "identifier": "https://doi.org/10.1186/1743-422X-9-218",
       "ISSN": "ISSN_xxxxxxx",
       "ISBN": "ISBN_xxxxxxx",
       "bibliographicCitation": "full citation",
@@ -28,7 +28,7 @@
       "licence": "xxx",
       "accessRights": "Open",
       "issued": "20/02/2018",
-      "relation": "DOI_XXXX",
+      "relation": "https://doi.org/10.1186/1743-422X-9-218",
       "peer-reviewed": true,
       "bookTitle": "xxxxx",
       "journalTitle": null,
@@ -45,12 +45,12 @@
       "isPartOf": "book part of series",
       "creator": [
          {
-            "identifier": "ORCID_xxxx",
+            "identifier": "https://orcid.org/0000-0001-7134-8977",
             "affiliation": "Bioversity International",
             "name": "Pierre Charles"
          },
          {
-            "identifier": "ORCID_xxxx",
+            "identifier": "https://orcid.org/0000-0002-1735-7458",
             "affiliation": "CIAT",
             "name": "Marlene Prince"
          }

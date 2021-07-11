@@ -7,7 +7,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:cg="http://cgiar.org/cg/terms/">
     <cg:ScientificPublication>
-        <dct:identifier>DOI_xxxxxxx</dct:identifier>
+        <dct:identifier>https://doi.org/10.1186/1743-422X-9-218</dct:identifier>
         <cg:issn>ISSN_xxxxxxx</cg:issn>
         <cg:isbn>ISBN_xxxxxxx</cg:isbn>
         <dct:bibliographicCitation>full citation</dct:bibliographicCitation>
@@ -31,7 +31,7 @@
         <dct:licence>xxx</dct:licence> <!-- ### controlled list (cc licenses new and old cf.screenshot)-->
         <dct:accessRights>Open</dct:accessRights>
         <dct:issued>20/02/2018</dct:issued>
-        <dct:relation>DOI_XXXX</dct:relation> <!-- linked dataset -->
+        <dct:relation>https://doi.org/10.1186/1743-422X-9-218</dct:relation> <!-- linked dataset -->
         <cg:peer-reviewed>true</cg:peer-reviewed>
         <cg:bookTitle>xxxxx</cg:bookTitle>
         <cg:journalTitle></cg:journalTitle> <!--  controled list -->
@@ -47,12 +47,12 @@
         <dct:audience></dct:audience>
         <dct:isPartOf>book part of series</dct:isPartOf> <!-- appplies only for books -->
         <dct:creator>
-            <dct:identifier>ORCID_xxxx</dct:identifier>
+            <dct:identifier>https://orcid.org/0000-0002-1735-7458</dct:identifier>
             <cg:affiliation>Bioversity International</cg:affiliation>
             <foaf:name>Pierre Charles</foaf:name>
         </dct:creator>
         <dct:creator>
-            <dct:identifier>ORCID_xxxx</dct:identifier>
+            <dct:identifier>https://orcid.org/0000-0002-1735-7458</dct:identifier>
             <cg:affiliation>CIAT</cg:affiliation>
             <foaf:name>Marlene Prince</foaf:name>
         </dct:creator>
