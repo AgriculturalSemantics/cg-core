@@ -127,7 +127,7 @@ cg:ScientificPublication a rdfs:Class ;
             owl:onProperty cg:ScientificPublication ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty cg:peer-reviewed ],
+            owl:onProperty cg:reviewStatus ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty cg:volume ],
@@ -236,8 +236,8 @@ cg:pages a rdf:Property ;
     rdfs:label "pages" ;
     rdfs:comment "Page numbers" .
 
-cg:peer-reviewed a rdf:Property ;
-    rdfs:label "peer-reviewed" ;
+cg:reviewStatus a rdf:Property ;
+    rdfs:label "reviewStatus" ;
     rdfs:comment "If the resource has been peer reviewed" .
 
 cg:series a rdf:Property ;
