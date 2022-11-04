@@ -1,3 +1,7 @@
+## 2022-11-04
+
+- Update Bootstrap from v4.6 to v5.2
+
 ## 2021-01-19
 - Fix links to xCoord, yCoord, and code in docs
 - Remove unnecessary links in docs
