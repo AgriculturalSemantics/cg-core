@@ -1,6 +1,6 @@
 {
    "InformationProduct": {
-      "identifier": "DOI_xxxxxxx",
+      "identifier": "https://doi.org/10.1186/1743-422X-9-218",
       "type": "Data file",
       "title": "Field data in Kenya",
       "description": "description of the experiment",
@@ -22,16 +22,16 @@
       "accessRights": "Open",
       "issued": "2018-05-20",
       "embargoDate": "2018-07-31",
-      "relation": "DOI_XXXX",
+      "relation": "https://doi.org/10.1186/1743-422X-9-218",
       "hasMetadata": "URL/DOI or JSON object",
       "creator": [
          {
-            "identifier": "ORCID_xxxx",
+            "identifier": "https://orcid.org/0000-0001-7134-8977",
             "affiliation": "Bioversity International",
             "name": "Pierre Charles"
          },
          {
-            "identifier": "ORCID_xxxx",
+            "identifier": "https://orcid.org/0000-0002-1735-7458",
             "affiliation": "CIAT",
             "name": "Marlene Prince"
          }
