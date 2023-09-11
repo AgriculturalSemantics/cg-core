@@ -3,6 +3,7 @@
 - Re-organize project
   - Data like CSV and RDF into `data` directory
   - User-facing content into `docs` directory
+- Update dependencies in line with Bootstrap v5.3.x
 
 # 2022-11-04
 
