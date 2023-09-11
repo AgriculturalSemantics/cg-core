@@ -1,28 +1,30 @@
-## 2022-11-04
+# 2022-11-04
 
 - Update Bootstrap from v4.6 to v5.2
 
-## 2021-01-19
+# 2021-01-19
+
 - Fix links to xCoord, yCoord, and code in docs
 - Remove unnecessary links in docs
 - Update to Bootstrap v4.6.0
 
-## 2021-01-05
+# 2021-01-05
+
 - Use sass instead of node-sass (sass is the only officially maintained version)
 
-## 2020-11-15
+# 2020-11-15
 
 - Use node-sass 5.0.0
 
-## 2020-10-19
+# 2020-10-19
 
 - Update Bootstrap from 4.5.0 to 4.5.3
 
-## 2020-07-27
+# 2020-07-27
 
 - Use JavaScript from local project instead of a CDN
 
-## 2020-07-26
+# 2020-07-26
 
 - Update Bootstrap from 4.4.1 to 4.5.0
 - Update Node.js dependencies
@@ -30,7 +32,7 @@
   - sort metadata classes alphabetically
   - don't use uppercase for class names (except ScientificPublication, because that one is custom and I should consult Marie and update all the examples)
 
-## 2020-07-21
+# 2020-07-21
 
 - Adjust look and feel of cgcore.html:
   - Use Bootstrap classes to set the width of table cells instead of using CSS `width` directly
