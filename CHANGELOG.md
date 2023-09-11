@@ -1,3 +1,9 @@
+# 2023-09-11
+
+- Re-organize project
+  - Data like CSV and RDF into `data` directory
+  - User-facing content into `docs` directory
+
 # 2022-11-04
 
 - Update Bootstrap from v4.6 to v5.2
