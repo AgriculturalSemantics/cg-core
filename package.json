@@ -7,8 +7,8 @@
     "url": "https://github.com/AgriculturalSemantics/cg-core.git"
   },
   "scripts": {
-    "build:css": "sass --style expanded scss/style.scss main.css.tmp && cleancss -O1 main.css.tmp -o css/main.css",
-    "build:js": "terser node_modules/jquery/dist/jquery.slim.min.js node_modules/bootstrap/dist/js/bootstrap.min.js -o js/bundle.min.js",
+    "build:css": "sass --style expanded scss/style.scss main.css.tmp && cleancss -O1 main.css.tmp -o docs/css/main.css",
+    "build:js": "terser node_modules/jquery/dist/jquery.slim.min.js node_modules/bootstrap/dist/js/bootstrap.min.js -o docs/js/bundle.min.js",
     "build": "npm run build:css && npm run build:js && npm run clean",
     "clean": "rm main.css.tmp main.css.tmp.map"
   },
