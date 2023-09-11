@@ -16,10 +16,10 @@
   "author": "Alan Orth",
   "license": "CC-BY-4.0",
   "devDependencies": {
-    "bootstrap": "^5.2.0",
-    "clean-css-cli": "^5.6.1",
-    "jquery": "^3.6.1",
-    "sass": "^1.55.0",
-    "terser": "^5.15.0"
+    "bootstrap": "^5.3.1",
+    "clean-css-cli": "^5.6.2",
+    "jquery": "^3.7.0",
+    "sass": "^1.66.1",
+    "terser": "^5.19.2"
   }
 }
