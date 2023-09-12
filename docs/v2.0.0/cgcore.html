@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.7.16">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
+  <title>CG Core Metadata Schema</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-quick-jump">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- only show menu on large devices -->
+      <div class="col-lg-2 d-none d-lg-block">
+        <div class="sticky-top">
+          <nav id="navbar-quick-jump" class="navbar navbar-light bg-light flex-column align-items-start p-3">
+            <a class="navbar-brand" href="#">Quick Jump</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#metadata-properties">Metadata Properties</a>
+              <a class="nav-link" href="#metadata-classes">Metadata Classes</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#concept-class">Concept</a>
+                <a class="nav-link ms-3 my-1" href="#contributor-class">Contributor</a>
+                <a class="nav-link ms-3 my-1" href="#coverage-class">Coverage</a>
+                <a class="nav-link ms-3 my-1" href="#creator-class">Creator</a>
+                <a class="nav-link ms-3 my-1" href="#scientificPublication-class">Scientific Publication</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      </div>
+      <!-- main content is 10 columns on large devices, 12 on all others -->
+      <main class="col-lg-10">
+        <h1>CG Core Metadata Reference Guide</h1>
+        <p class="lead">This page provides a list of the metadata elements that are used in the CG Core metadata schema. The CG Core metadata schema is an application profile and is built from existing standards as much as possible. It is an effort led by the Big Data Platform Metadata Working Group of the CGIAR.</p>
+        <p>The CG Core aims to describe all types of information products that are published by the different CGIAR centres. There are many benefits of having a clear and harmonised way to describe information products:</p>
+        <ul>
+          <li>better interoperability</li>
+          <li>better transparency</li>
+          <li>easy monitoring</li>
+        </ul>
+        <p>This document provides guidelines on how to use the CG Core metadata schema and provides examples on how to use it. An RDF version of the application profile will be available soon.</p>
+        <h2 id="metadata-properties">Metadata Properties</h2>
+        <p><a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:identifier">identifier</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:title">title</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:description">description</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:type">type</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:language">language</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:license">license</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:rightsHolder">rightsHolder</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:accessRights">accessRights</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:subject">subject</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:issued">issued</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:embargoDate">embargoDate</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:creator">creator</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:contributor">contributor</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:coverage">coverage</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:relation">relation</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:HasMetadata">hasMetadata</a></p>
+        <p class="invisible"><a id="dcterms:identifier"></a></p>
+        <table class="table table-sm table-bordered">
+          <thead>
+            <tr class="table-secondary">
+              <th colspan="2">
+                identifier
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/identifier">http://purl.org/dc/terms/identifier</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>An unambiguous reference to the resource within a given context.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Recommended best practice is to identify the resource by using a DOI or an handle</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:title"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                title
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/title">http://purl.org/dc/terms/title</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A name given to the resource</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Follow standard title formatting for capitalization and punctuation.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td>
+                <ul>
+                  <li><code>Managing for timber and biodiversity in the Congo basin</code></li>
+                  <li><code>A 2007 Social Accounting Matrix for China</code></li>
+                  <li><code>2012 Global Hunger Index Data</code></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:description"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                description
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/description">http://purl.org/dc/terms/description</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Descriptive details significantly improve discoverability via search engines such as Google and Bing, and will aid interlink between related resources at the meta-search/indexer level. Descriptions can be provided in multiple languages if appropriate and available.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:type"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                type
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/type">http://purl.org/dc/terms/type</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The nature or genre of the resource</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                Must be populated with a value from the local <a href="IPtypes.html">Type</a> and subType lists
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>Datafile</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:language"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                language
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/language">http://purl.org/dc/terms/language</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A language of the resource.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>ISO 639-2 (alpha-3)</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>eng</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:license"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                license
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/license">http://purl.org/dc/terms/license</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A legal document giving official permission to do something with the resource.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                List of licenses from <a href="https://spdx.org/licenses/">SPDX</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code><a href="http://creativecommons.org/licenses/by/4.0/legalcode">http://creativecommons.org/licenses/by/4.0/legalcode</a></code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:rightsHolder"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                rightsHolder
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/rightsHolder">http://purl.org/dc/terms/rightsHolder</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A person or organisation owning or managing rights over the resource.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>CIAT</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:accessRights"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                accessRights
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/accessRights">http://purl.org/dc/terms/accessRights</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Values should come from the following list: "open", "restricted"</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>open</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:subject"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                subject
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/subject">http://purl.org/dc/terms/subject</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>keywords describing the subject of the information product.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>To be used to link the resource to one or more concept</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:issued"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                issued
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/issued">http://purl.org/dc/terms/issued</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Date of formal issuance (e.g., publication) of the resource</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>The date when the information product was created in its final form to be published</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:embargoDate"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                embargoDate
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/embargoDate">http://purl.org/cg/terms/embargoDate</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>In cases when the information product has an embargo this date indicates when it would be available.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:creator"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                creator
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/creator">http://purl.org/dc/terms/creator</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>To be used to link the resource to one or more creator objects</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>This term is intended to be used with non-literal values</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:contributor"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                contributor
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/contributor">http://purl.org/dc/terms/contributor</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>To be used to link the resource to one or more contributor objects</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>This term is intended to be used with non-literal values</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:coverage"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                coverage
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/coverage">http://purl.org/dc/terms/coverage</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>To be used to link the resource to one or more coverage objects</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>This term is intended to be used with non-literal values</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:relation"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                relation
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/relation">http://purl.org/dc/terms/relation</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A related resource</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>This term is intended to be used with non-literal values. Should be use to link a dataset to its related publication(s) and reciprocally</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:HasMetadata"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                hasMetadata
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/hasMetadata">http://purl.org/cg/terms/hasMetadata</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A related resource that is the metadata record for the measured variables of the described dataset</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>This term is intended to be used with non-literal values.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="metadata-classes">Metadata Classes</h2>
+        <h3 id="concept-class">Concept</h3>
+        <div class="my-4">
+          <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:label">label</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:vocab">vocab</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:identifier">identifier</a>
+        </div>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-primary">
+              <th colspan="2">
+                concept
+                <div class="badge-class">
+                  <span class="badge text-bg-primary">Class</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/concept">http://purl.org/cg/terms/concept</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A a unit of thought e.g. skos:concept, owl:class or simple keywords</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:label"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                label
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The label of the concept</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Should be the preferred label if a concept has several labels</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:vocab"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                vocab
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/vocab">http://purl.org/cg/terms/vocab</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Source of the concept</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>One of the following: AGROVOC, GACS, AgrO, CO</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>AGROVOC</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:identifier"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                identifier
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/identifier">http://purl.org/dc/terms/identifier</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>URI of the concept</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td>
+                <a href="http://aims.fao.org/aos/agrovoc/c_7771">http://aims.fao.org/aos/agrovoc/c_7771</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="contributor-class">Contributor</h3>
+        <div class="my-4">
+          <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:contributor%20name">contributor name</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:contributor%20type">type</a>
+        </div>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-primary">
+              <th colspan="2">
+                contributor
+                <div class="badge-class">
+                  <span class="badge text-bg-primary">Class</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/contributor">http://purl.org/cg/terms/contributor</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Organisation, or service making contributions to the information product.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>describe one of the following: "Project", "Project Lead Entity", "Partner", "CRP", "Donor"</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:contributor name"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                name
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/name">http://xmlns.com/foaf/0.1/name</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The name identifying the contributor</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                <ul>
+                  <li>for donors, recommendation to use <a href="https://www.crossref.org/services/funder-registry/">crossref Donors registry</a>
+                  </li>
+                  <li>for CRPs and Project Lead Entity, recommendation to use <a href="https://clarisa.cgiar.org/api/cgiar-entities">CLARISA entity list</a>
+                  </li>
+                  <li>for partners, recommendation to use <a href="https://clarisa.cgiar.org/api/institutions">CLARISA institution list</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:contributor type"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                type
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/type">http://purl.org/dc/terms/type</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The type of contributor the contributor</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>one of these values: "Project", "Project Lead Entity", "Partner", "CRP", "Donor"</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="coverage-class">Coverage</h3>
+        <div class="my-4">
+          <a class="btn btn-sm btn-outline-secondary m-1" href="#cgcoverage%20type">type</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#spatial">spatial coverage</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#temporal">temporal coverage</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#label">label</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cgcoverage%20identifier">identifier</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:code">code</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:xCoord">xCoord</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:yCoord">yCoord</a>
+        </div>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-primary">
+              <th colspan="2">
+                coverage
+                <div class="badge-class">
+                  <span class="badge text-bg-primary">Class</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/coverage">http://purl.org/cg/terms/coverage</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Spatial or temporal coverage</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cgcoverage type"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                type
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/type">http://purl.org/dc/terms/type</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The nature or genre of the coverage information</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Must be populated with a value coming from the coverage type list</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td>
+                <ul>
+                  <li><code>spatial</code></li>
+                  <li><code>temporal</code></li>
+                  <li><code>region</code></li>
+                  <li><code>country</code></li>
+                  <li><code>administrative Unit</code></li>
+                  <li><code>AEZ</code></li>
+                  <li><code>X</code></li>
+                  <li><code>Y</code></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="spatial"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                spatial
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/spatial">http://purl.org/dc/terms/spatial</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Spatial characteristics of the resource.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="temporal"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                temporal
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/temportal">http://purl.org/dc/terms/temporal</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Temporal characteristics of the resource.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Should point to an interval of time that is named or defined by its start and end dates.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="label"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                label
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Label of the spatial zone</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cgcoverage identifier"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                identifier
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="ttp://purl.org/dc/terms/identifier">http://purl.org/dc/terms/identifier</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Identifier of the spatial unit</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:code"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                code
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/code">http://purl.org/cg/terms/code</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Code of the agroecological zone as defined by FAO</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>101</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:xCoord"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                xCoord
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/xCoord">http://purl.org/cg/terms/xCoord</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>x coordinate, in decimal degrees</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:yCoord"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                yCoord
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/yCoord">http://purl.org/cg/terms/yCoord</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>y coordinate, in decimal degrees</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="creator-class">Creator</h3>
+        <div class="my-4">
+          <a class="btn btn-sm btn-outline-secondary m-1" href="#dcterms:identifier">identifier</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:affiliation">affiliation</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:creator%20name">name</a>
+        </div>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-primary">
+              <th colspan="2">
+                creator
+                <div class="badge-class">
+                  <span class="badge text-bg-primary">Class</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/creator">http://purl.org/cg/terms/creator</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The author(s), researcher(s), scientist(s) responsible for producing the information product</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dcterms:identifier"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                identifier
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/identifier">http://purl.org/dc/terms/identifier</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>ORCID</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:affiliation"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                affiliation
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/affiliation">http://purl.org/cg/terms/affiliation</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>the affiliation of the creator</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                Must be populated with a value coming from the CLARISA <a href="https://clarisa.cgiar.org/api/institutions">institution list</a> or the <a href="https://www.grid.ac/">grid</a> list
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>Bioversity International</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:creator name"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                name
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/name">http://xmlns.com/foaf/0.1/name</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The full name identifying the creator</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="scientificPublication-class">Scientific Publication</h3>
+        <div class="my-4">
+          <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:abstract">abstract</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:bibliographicCitation">bibliographicCitation</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:publisher">publisher</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:issn">issn</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:isbn">isbn</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:peer-reviewed">peer-reviewed</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:alternative">alternative title</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:howpublished">howpublished</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:journal">journal</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:booktitle">booktitle</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:chapter">chapter</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:pages">pages</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:volume">volume</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:number">number</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:extent">extent</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:series">series</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:edition">edition</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#cg:notes">notes</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:audience">audience</a> <a class="btn btn-sm btn-outline-secondary m-1" href="#dct:isPartOf">isPartOf</a>
+        </div>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-primary">
+              <th colspan="2">
+                Scientific Publication
+                <div class="badge-class">
+                  <span class="badge text-bg-primary">Class</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/ScientificPublication">http://purl.org/cg/terms/ScientificPublication</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Specific Information Product type covering publications</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dct:abstract"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                abstract
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/abstract">http://purl.org/dc/terms/abstract</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A summary of the resource</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                refines <a href="http://purl.org/dc/terms/description">dct:description</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dct:bibliographicCitation"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                bibliographicCitation
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/bibliographicCitation">http://purl.org/dc/terms/bibliographicCitation</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A bibliographic reference for the resource</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible. Refines <a href="http://purl.org/dc/terms/identifier">dct:identifier</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dct:publisher"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                publisher
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/publisher">http://purl.org/dc/terms/publisher</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>An entity responsible for making the resource available</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Here, the publisher of the scientific publication</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:issn"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                issn
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/issn">http://purl.org/cg/terms/issn</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Used to record ISSN number</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                Refines <a href="http://purl.org/dc/terms/identifier">dct:identifier</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:isbn"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                isbn
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/isbn">http://purl.org/cg/terms/isbn</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Used to record ISBN number</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                Refines <a href="http://purl.org/dc/terms/identifier">dct:identifier</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:peer-reviewed"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                peer-reviewed
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/peer-reviewed">http://purl.org/cg/terms/peer-reviewed</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>If the resource has been peer reviewed</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td>true is peer-reviewed, not used if not</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dct:alternative"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                Alternative Title
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/abstract">http://purl.org/dc/terms/alternative</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>An alternative name for the resource.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>
+                refines <a href="http://purl.org/dc/terms/title">dct:title</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:howpublished"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                howpublished
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/howpublished">http://purl.org/cg/terms/howpublished</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>How it was published, if the publishing method is nonstandard</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:journal"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                journal
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/journal">http://purl.org/cg/terms/journal</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The journal name</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:booktitle"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                booktitle
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/booktitle">http://purl.org/cg/terms/booktitle</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The title of the book, if only part of it is being cited</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:chapter"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                chapter
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/chapter">http://purl.org/cg/terms/chapter</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The chapter number</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:pages"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                pages
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/pages">http://purl.org/cg/terms/pages</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Page numbers</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:volume"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                volume
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/volume">http://purl.org/cg/terms/volume</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The volume of a journal or multi-volume book</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:number"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                number
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/number">http://purl.org/cg/terms/number</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The "(issue) number" of a journal, magazine, or tech-report</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dct:extent"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                extent
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/extent">http://purl.org/dc/terms/extent</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The size or duration of the resource</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td>
+                <ul>
+                  <li><code>p. 1159-1179</code></li>
+                  <li><code>47 p.</code></li>
+                  <li><code>185-211 p.</code></li>
+                  <li><code>65(2): 200-206</code></li>
+                  <li><code>1-13</code></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:series"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                series
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/series">http://purl.org/cg/terms/series</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The series of books the book was published in</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>Lecture Notes in Computer Science</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:edition"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                edition
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/edition">http://purl.org/cg/terms/edition</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>The edition of a book, long form</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>First Edition</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="cg:notes"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                notes
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/cg/terms/notes">http://purl.org/cg/terms/notes</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>Miscellaneous extra information related to a scientific publication</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dct:audience"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                audience
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/audience">http://purl.org/dc/terms/audience</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A class of entity for whom the resource is intended or useful.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Should be populated using 'Agent Class', which include groups seen as classes, such as students, women, charities, lecturers.</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td><code>Students</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="invisible"><a id="dct:isPartOf"></a></p>
+        <table class="table table-sm table-bordered">
+          <tbody>
+            <tr class="table-secondary">
+              <th colspan="2">
+                isPartOf
+                <div class="badge-property">
+                  <span class="badge text-bg-secondary">Property</span>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Identifier</td>
+              <td>
+                <a href="http://purl.org/dc/terms/isPartOf">http://purl.org/dc/terms/isPartOf</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Definition</td>
+              <td>A related resource in which the described resource is physically or logically included</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Comments</td>
+              <td>Should be used to link a book to a series</td>
+            </tr>
+            <tr>
+              <td class="col-2 field-name">Examples</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </div>
+  <script src="js/bundle.min.js"></script>
+</body>
+</html>
