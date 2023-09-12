@@ -1,3 +1,11 @@
+// override some Bootstrap colors. Apparently we need to do this *before* we
+// process Bootstrap.
+
+// CGIAR dark green
+$primary: #427730;
+// CGIAR light green
+$secondary: #7AB800;
+
 // selectively import components we need from bootstrap
 // see: node_modules/bootstrap/scss/bootstrap.scss
 @import 'bootstrap';
