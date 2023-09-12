@@ -1,3 +1,8 @@
+# 2023-09-12
+
+- Archive v2.0.0 docs to `docs/v2.0.0` so we have a historical reference
+- Update IPtypes.csv and add script to parse and generate IPtypes.html
+
 # 2023-09-11
 
 - Re-organize project
