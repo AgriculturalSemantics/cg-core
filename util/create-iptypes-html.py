@@ -42,6 +42,7 @@ with open('docs/IPtypes.html', 'w', encoding="utf-8") as ip_types_html_f:
     # Write a table for each type
     for ip_type in ip_types:
         ip_type_short = ip_type.replace(' ', '-').lower()
+        ip_type_identifier = f'https://purl.org/cg/terms/{ ip_type_short }'
 
         # All items have descriptions
         ip_type_description = df.query(f'Type == "{ ip_type }"')['Description'].values.tolist()[0]
@@ -61,6 +62,10 @@ with open('docs/IPtypes.html', 'w', encoding="utf-8") as ip_types_html_f:
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td class="col-2 field-name">Identifier</td>
+                        <td><a href="{ ip_type_identifier }">{ ip_type_identifier }</a></td>
+                    </tr>
                     <tr>
                         <td class="col-2 field-name">Description</td>
                         <td>{ ip_type_description }</td>
