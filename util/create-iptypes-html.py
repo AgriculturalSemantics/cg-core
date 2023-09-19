@@ -44,8 +44,8 @@ with open('docs/IPtypes.html', 'w', encoding="utf-8") as ip_types_html_f:
         ip_type_short = ip_type.replace(' ', '-').lower()
         ip_type_identifier = f'https://purl.org/cg/terms/{ ip_type_short }'
 
-        # All items have descriptions
-        ip_type_description = df.query(f'Type == "{ ip_type }"')['Description'].values.tolist()[0]
+        # All items have definitions
+        ip_type_description = df.query(f'Type == "{ ip_type }"')['Definition'].values.tolist()[0]
 
         # Begin writing table with common metadata
         ip_types_html_f.write(f'''<div class="col">
@@ -67,7 +67,7 @@ with open('docs/IPtypes.html', 'w', encoding="utf-8") as ip_types_html_f:
                         <td><a href="{ ip_type_identifier }">{ ip_type_identifier }</a></td>
                     </tr>
                     <tr>
-                        <td class="col-2 field-name">Description</td>
+                        <td class="col-2 field-name">Definition</td>
                         <td>{ ip_type_description }</td>
                     </tr>''')
 
@@ -99,8 +99,8 @@ with open('docs/IPtypes.html', 'w', encoding="utf-8") as ip_types_html_f:
                         <td>{ ip_type_example_link }</td>
                     </tr>''')
 
-        # I'm going to interpret this "Examples" column as guidance
-        ip_type_guidance = df.query(f'Type == "{ ip_type }"')['Examples'].values.tolist()[0]
+        # Specific guidance
+        ip_type_guidance = df.query(f'Type == "{ ip_type }"')['Guidance'].values.tolist()[0]
         if isinstance(ip_type_guidance, str):
             ip_types_html_f.write(f'''
                     <tr>
