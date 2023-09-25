@@ -64,7 +64,8 @@ with open('docs/IPtypes.html', 'w', encoding="utf-8") as ip_types_html_f:
                 <tbody>
                     <tr>
                         <td class="col-2 field-name">Identifier</td>
-                        <td><a href="{ ip_type_identifier }">{ ip_type_identifier }</a></td>
+                        <!-- 2023-09-25: identifiers should not be clickable yet, as many don't work -->
+                        <td>{ ip_type_identifier }</td>
                     </tr>
                     <tr>
                         <td class="col-2 field-name">Definition</td>
